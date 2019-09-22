@@ -1,0 +1,31 @@
+OrdererOrgs:
+  - Name: Orderer
+    Domain: example.com
+    Specs:
+      - Hostname: orderer
+
+PeerOrgs:
+  # 公司
+  - Name: Org1
+    Domain: org1.example.com
+    Template:
+      Count: 1
+    Users:
+      Count: 4
+      
+  # 工作人员
+  - Name: Org2
+    Domain: org2.example.com
+    Template:
+      Count: 1
+    Users:
+      Count: 4
+
+  # 普通查询者
+  - Name: Org3
+    Domain: org3.example.com
+    Template:
+      Count: 1
+    Users:
+      Count: 4
+
